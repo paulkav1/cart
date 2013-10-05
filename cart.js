@@ -5,6 +5,7 @@
 */
 function formcheck(){
 	alert('formcheck');
+	return false;
 };
 
 $(document).ready(function(){
