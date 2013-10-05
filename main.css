@@ -62,23 +62,18 @@ p{
 }
 .cart-title {
     font-size: 24px;
-    color: #336699;
-    font-weight: bold;
-    text-decoration: underline;
-}
-.cart-sub-title {
     font-size: 15px;
     font-weight: bold;
     color: #cc0000;
     margin-top: 14px;
     margin-bottom: 16px;
 }
-#item, #tem-chk{
+#item, #item-chk{
     font-size: 20px;
 }
-#submit{
+#submit, #add{
     font-size:20px;
-    height: 16px;
-    width: 50px;
-    background-color:light-blue;
+    height: 18px;
+    width: 90px;
+    background-color:yellow;
 }
