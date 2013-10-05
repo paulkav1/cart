@@ -18,29 +18,16 @@
       <li><a href="http://www.noodle.org">Noodle</a></li>            
     </ul>           
 	</div>
-  <form action="cart" onsubmit="return formcheck()">
   <div class="general">
+    <form action="cart" onsubmit="return formcheck()">
     <div class="headline">
         <h1 class="main-text"><span id="hot">Cart</span></h1>
-    <div class="box" id="box1"> 
-        <p class="box-sub-title">Guess</p>
-        <p><input id="guess" type="text" name="guess" value="?"></p>               
+    <div class="cart" id="box1"> 
+        <p class="cart-sub-title">Guess</p>
+        <p><input class="item" type="text" name="item"></p> 
+        <p><input class="item-chk" type="text" name="item"></p>                         
     </div>
-    </div>
-    <div class="box" id="box2">
-        <p class="box-sub-title">Guesses</p>
-        <p><input id="err" type="text" name="diff" value="?"></p>        
-      </div>
-    <div class="box" id="box3">
-        <p class="box-sub-title">Target</p>
-        <p><input id="target" type="text" name="target" value="?"></p>      
-      
-    </div>
-  <div id="msg"></div>
-        <p><input id="play" type="button" name="play" value="Play"></p>
-        <p><input id="submit" type="submit" name="submit" value="Submit"></p>        
-        <p class="box-sub-title">Feedback</p>
-        <p><input id="feedback" type="text" name="feedback" value="?"></p>      
+      <p><input id="submit" type="submit" name="submit" value="Submit"></p>        
   </div>
 </form>
 </body>
