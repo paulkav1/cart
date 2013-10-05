@@ -43,7 +43,7 @@ p{
 }
 .cart {
     width: 250px;
-    height:80px;
+    height:600px;
     display: inline-block;
     position: relative;
     margin: 0 18px;
@@ -70,10 +70,11 @@ p{
 }
 #item, #item-chk{
     font-size: 20px;
+    width:200px;
 }
 #submit, #add{
-    font-size:20px;
-    height: 18px;
+    font-size:16px;
+    height: 24px;
     width: 90px;
     background-color:yellow;
 }

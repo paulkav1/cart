@@ -11,13 +11,8 @@ function formcheck(){
 $(document).ready(function(){
 	var guess;
 
-	$('#hint').click(function(){
-		$('#target').val(target);		
-	});
-
-	$('#play').click(function(){
-		target = Math.floor(100 * Math.random());
-		guesses = '';
+	$('#add').click(function(){
+		alert('add button')		
 	});
 
 	$('#guess').change(function(){
