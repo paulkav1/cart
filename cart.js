@@ -1,27 +1,40 @@
 function formCheck(){
-	var item = $('.item').val();
+	item = $('#item1').val();
+
 	if (item == null || item == ""){
-		//alert('item has no value');
-		$('.item').css("background-color", "yellow");
-		return false;		
+		$('#item1').css("background-color", "yellow");
+		$('#add').css("color", "grey");
+		$('#items').html('<p>Fix the item!</p>');		
+		edit_fail = true;	
 	}else{
-		$('.item').css("background-color", "white");		
-		return false;
+		$('#item1').css("background-color", "white");
+		$('#add').css("color", "black");
+		$('#items').html('<p>' + items + ' items</p>');		
+		edit_fail = false;				
 	}
+	return false;
 };
 
 $(document).ready(function(){
-	var items = 0;
+	edit_fail = false;
+	items = 0;
+	item_list = [];
 
 	$('#add').click(function(){
-		$('#ct').append('<div><input class="item" type="text" name="f1" placeholder="enter value"><input class="chk" type="checkbox"></div>');
-		items++;
-		$('#items').html('<p>' + items + ' items</p>');
+		if (!edit_fail){
+			if (items != 0){
+				item = $('#item1').val();
+				$('#item1').val('');
+			}else{
+				item = '';
+			}			
+			$('#ct').append('<div><input class="item" type="text" value="' + item + '" name="f1" placeholder="enter value"><input class="chk" type="checkbox"></div>');
+			items++;
+			item_list[items] = item
+		}
 	});
 
 	$('.item').change(function(){
-		item = $('.item').val();
+		item = $('#item1').val();
 	});
 })
-
-//document.forms["cart"]["f1"].value;
