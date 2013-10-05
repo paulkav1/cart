@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Huckle</title>
+	<title>Cart</title>
   <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css"> 
 	<link rel="stylesheet" type="text/css" href="main.css"/>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -14,9 +14,11 @@
     <ul>
   		<li><a href="https://dl.dropboxusercontent.com/u/3285236/Goodle/index.html">Google</a></li>
   		<li><a href="https://dl.dropboxusercontent.com/u/3285236/37sig/index.html">37 Signals</a></li>
-  		<li><a href="http://www.noodle.org">Noodle</a></li>
+      <li><a href="http://paulkav1.github.io/huckle/">Hot or Not</a></li>
+      <li><a href="http://www.noodle.org">Noodle</a></li>            
     </ul>           
 	</div>
+  <form action="cart" onsubmit="return formcheck()">
   <div class="general">
     <div class="headline">
         <h1 class="main-text"><span id="hot">Cart</span></h1>
@@ -34,11 +36,12 @@
         <p><input id="target" type="text" name="target" value="?"></p>      
       
     </div>
-<div id="msg"></div>
+  <div id="msg"></div>
         <p><input id="play" type="button" name="play" value="Play"></p>
         <p><input id="hint" type="button" name="hint" value="Hint"></p>        
         <p class="box-sub-title">Feedback</p>
         <p><input id="feedback" type="text" name="feedback" value="?"></p>      
-</div>
+  </div>
+</form>
 </body>
 </html>

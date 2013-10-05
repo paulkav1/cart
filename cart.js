@@ -1,3 +1,12 @@
+/*
+ list of items
+ can add (and delete)
+ can check off
+*/
+function formcheck(){
+	alert('formcheck');
+};
+
 $(document).ready(function(){
 	var target = Math.floor(100 * Math.random());
 	var dif;
