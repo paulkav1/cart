@@ -12,7 +12,8 @@ $(document).ready(function(){
 	var guess;
 
 	$('#add').click(function(){
-		alert('add button')		
+		alert('add button')	
+		$'.cart'.append('<div><input class="item" type="text" name="item"></div>')	
 	});
 
 	$('#guess').change(function(){
