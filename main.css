@@ -7,7 +7,9 @@ p{
 	font-size:20px;
 	margin:10px;
 }
-
+checkbox{
+    font-size: 20px;
+}
 .navbar{
 	background-color: white;
 	float: right;
@@ -42,7 +44,7 @@ p{
     background-color:white;
 }
 .cart {
-    width: 220px;
+    width: 300px;
     height:400px;
     display: inline-block;
     position: relative;
@@ -62,17 +64,16 @@ p{
 }
 .cart-title {
     font-size: 24px;
-    font-size: 15px;
     font-weight: bold;
     color: #cc0000;
     margin-top: 14px;
     margin-bottom: 16px;
 }
-#item, #item-chk{
-    font-size: 20px;
-    width:200px;
+.item, .item-chk{
+    font-size: 12px;
+    width:150px;
 }
-#submit, #add{
+#add{
     font-size:16px;
     height: 24px;
     width: 90px;

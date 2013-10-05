@@ -19,20 +19,14 @@
     </ul>           
 	</div>
   <div class="general">
-    <form action="cart" onsubmit="return formcheck()">
-    <div class="cart"> 
+    <form action="cart" onsubmit="return formCheck()">
+    <div class="cart" id="ct"> 
         <p class="cart-title">Cart</p>
-        <div>
-          <input class="item" type="text">
-          <input class="chk" type="checkbox">
-        </div> 
-        <div>
-          <input class="item-chk" type="text"</div> 
-          <input class="chk" type="checkbox">                        
-        </div>
-      <div><input id="submit" type="submit" name="submit" value="Submit">
-      <input id="add" type="submit" name="add" value="Add"></div>                   
-  </div>
+        <p id="items">0 items</p>
+    </div>       
+    <div>
+      <input id="add" type="submit" name="add" value="Add">
+    </div>                   
 </form>
 </body>
 </html>
