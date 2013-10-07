@@ -60,13 +60,14 @@ checkbox{
     font-weight: bold;
     color: #cc0000;
     margin-top: 14px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+    margin-right:20px;    
 }
 .item, .item-chk{
     font-size: 12px;
     width:150px;
 }
-#item1{
+#itemx{
     font-size: 12px;
     width:150px;
     margin-right:20px;  
