@@ -1,12 +1,12 @@
-//problem: I have two programs here using globals to communicate. How to fix?
+//problems: 
+// 1. I have two programs here using globals to communicate. How to fix?
+// 2. eval
+// 3. feels "hacky"
 
 function formCheck(){
 	item = $('#itemx').val();
 
-	if (item == null || item == ""){ //item is blank so complain
-	//	$('#itemx').css("background-color", "yellow");
-	//	$('#add').css("color", "grey");
-	//	$('#items').html('<p>Fix the item!</p>');				
+	if (item == null || item == ""){			
 	}else{							//item is OK so add to list
 		item = $('#itemx').val();
 		item_list[item_ix] = item	
@@ -27,7 +27,7 @@ $(document).ready(function(){
 	item_ix = 0;
 	item_list = [];
 
-	$('#rem').click(function(){		// remove checked items. Make new array and then re-create on screen
+	$('#rem').click(function(){			// Remove checked items. Make new array and then re-create on screen
 		for (i = item_list.length - 1; i >= 0; i--){  // do array in reverse to preserve numbering
 			var id = eval("$('#c" + i + "')")
 			if (id.is(':checked')){
