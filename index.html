@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Cart</title>
+	<title>Shopping List</title>
   <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css"> 
 	<link rel="stylesheet" type="text/css" href="main.css"/>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -20,13 +20,16 @@
 	</div>
   <div class="general">
     <form action="cart" onsubmit="return formCheck()">
-    <div class="cart" id="ct"> 
-        <p class="cart-title">Cart</p>
-      <input id="itemx" type="text" name="f1" placeholder="enter value">
-        <p id="items">0 items</p>      
+    <div class="cart"> 
+        <p class="title">Shopping List</p>
+      <input id="itemx" type="text" placeholder="enter value">
+        <p id="items">0 items</p>
+        <p id="checked">0 checked</p> 
+        <div id="ct"></div>    
     </div>           
     <div>
-      <input id="add" type="submit" name="add" value="Add">
+      <input id="add" type="submit" name="add" value="Refresh">
+      <input id="rem" type="submit" name="rem" value="Remove Checked Items">     
     </div>                   
 </form>
 </body>
